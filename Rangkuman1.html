@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kelompok 5</title>
-  <!-- Link ke CSS Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <style>
     /* Styling tambahan untuk sidebar */
@@ -62,6 +61,8 @@
   </div>
     </div>
  </div>
+
+ <div class="container mt-5 p-4 border rounded bg-light">
     
     <!-- Rangkuman 1 -->
   <div id="Rangkuman1-content" class="profile-content">
@@ -104,6 +105,55 @@
     <p>Mendeklarasikan fungsi untuk digunakan di tempat lain dalam kode. Contoh: function myFunction() {console.log("Hello World");}</p>
     <h6>5. Return Statement</h6>
     <p>Menghentikan eksekusi fungsi dan mengembalikan nilai. Contoh: function add(a, b) {return a + b;}</p>
+    <h3>5.1 Syntax JS</h3>
+    <p>Aturan penulisan (syntax) di JS harus diikuti agar kode dapat dijalankan dengan benar.</p>
+    <h3>5.2 Elemen Dasar Sintaks JavaScript </h3>
+    <h6>1. JavaScript adalah Case-Sensitive</h6>
+    <p>Nama variabel atau fungsi harus konsisten dalam penggunaan huruf besar dan kecil. Contoh: let x = 5; let X = 10; // x dan X adalah variabel berbeda </p>
+    <h6>2. Menulis Pernyataan (Statements)</h6>
+    <p>JavaScript dijalankan dalam bentuk pernyataan (statements), yang biasanya diakhiri dengan titik koma (;). Contoh: let a = 5; let b = 10;</p>
+    <h6>3. Spasi Tidak Berpengaruh</h6>
+    <p>Anda bebas menambahkan spasi atau baris baru untuk memperjelas kode. Contoh: let sum = 5 + 10; // Masih valid</p>
+    <h6>4. Blok Kode ({})</h6>
+    <p>Blok kode digunakan untuk mengelompokkan beberapa pernyataan, biasanya dalam fungsi atau kontrol alur. Contoh: if (true) {console.log("Hello, world!");}</p>
+    <h6>5. Komentar</h6>
+    <p>Tambahkan komentar untuk menjelaskan kode. Contoh: // Ini komentar & /* Ini komentar beberapa baris */</p>
+    <h6>6. Variabel</h6>
+    <p>Gunakan let, const, atau var untuk mendeklarasikan variabel. Contoh: let x = 5; const y = 10;</p>
+    <h5>*Note: Sintaks JavaScript adalah inti dari penulisan kode yang dapat dibaca dan dijalankan oleh browser. Pastikan selalu mengikuti aturan ini untuk menghindari kesalahan.</h5>
+    <h3>6.1 Komentar</h3>
+    <p>Komentar digunakan untuk memberi catatan di dalam kode. Komentar tidak dijalankan oleh browser dan berguna untuk menjelaskan kode atau menonaktifkan bagian kode saat debugging.</p>
+    <h3>6.2 Jenis Komentar</h3>
+    <h6>1. Komentar satu baris</h6>
+    <p>Menggunakan // di awal. Contoh: // Ini adalah komentar satu baris</p>
+    <h6>2. Komentar beberapa baris</h6>
+    <p>Menggunakan /* di awal dan */ di akhir. Contoh: /* Ini adalah komentar beberapa baris */</p>
+    <h3>6.3 Fungsi Komentar</h3>
+    <p>Mempermudah memahami kode & Menonaktifkan kode sementara.</p>
+    <h3>7.1 Variabel dalam JavaScript</h3>
+    <p> Variabel digunakan untuk menyimpan nilai data. Variabel memungkinkan pengembang mengelola dan memanipulasi data dalam kode.</p>
+    <h3>7.2 Cara Mendeklarasikan Variabel</h3>
+    <h6>1. var (cara lama, jarang digunakan)</h6>
+    <p>Digunakan sebelum ES6 untuk mendeklarasikan variabel. Contoh: var x = 5; </p>
+    <h6>2. let (modern, sering digunakan)</h6>
+    <p>Digunakan untuk variabel yang nilainya dapat berubah. Contoh: let y = 10; </p>
+    <h6>3. const (konstan)</h6>
+    <p>Digunakan untuk variabel yang nilainya tetap (tidak dapat diubah). Contoh: const z = 15; </p>
+    <h3>7.3 Aturan Nama Variabel </h3>
+    <p>1. Harus dimulai dengan huruf, $, atau _.</p>
+    <p>2. Tidak boleh menggunakan kata kunci JavaScript. </p>
+    <p>3. Case-sensitive (huruf besar dan kecil dianggap berbeda). Contoh: myVariable dan myvariable adalah variabel yang berbeda.</p>
+    <h5>*Note: Gunakan let atau const untuk kode modern. Variabel harus memiliki nama yang deskriptif agar kode lebih mudah dibaca.</h5>
+    <h3>8.1 Variabel let</h3>
+    <p>Variabel let dalam JavaScript digunakan untuk mendeklarasikan variabel dengan cakupan blok (block scope). Ini adalah cara modern yang lebih aman dibandingkan var.</p>
+    <h3>8.2 Fitur Utama let</h3>
+    <h6>1. Cakupan Blok</h6>
+    <p>Variabel let hanya dapat diakses dalam blok tempat ia dideklarasikan (di antara {}). Contoh: {let x = 10; console.log(x); // Bisa diakses di sini} console.log(x); // Error, x tidak dideklarasikan di luar blok</p>
+    <h6>2. Tidak Bisa Dideklarasikan Ulang</h6>
+    <p>Tidak boleh mendeklarasikan ulang variabel dengan nama yang sama dalam cakupan yang sama. Contoh: let x = 10; let x = 20; // Error </p>
+    <h6>3. Dapat Diubah Nilainya</h6>
+    <p>Nilai variabel let bisa diperbarui. Contoh: let x = 10; x = 20; // Tidak masalah </p>
+  </div>
 
   </div>
 
