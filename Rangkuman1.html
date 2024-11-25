@@ -158,7 +158,32 @@
     <h6>9.1 Variabel const</h6>
     <p>Variabel const dalam JS digunakan untuk mendeklarasikan variabel dengan nilai tetap (konstan).</p>
     <h3>9.2 Fitur Utama const</h3>
-    <h6></h6>
+    <h6>1. Nilai Tidak Bisa Diubah</h6>
+    <p>Setelah variabel dideklarasikan, nilainya tidak dapat diubah. Contoh: const x = 10; x = 20; // Error</p>
+    <h6>2. Harus Diinisialisasi Saat Deklarasi</h6>
+    <p>Harus Diinisialisasi Saat Deklarasi. Contoh: const y; // Error y = 15; </p>
+    <h6>3. Cakupan Blok</h6>
+    <p>Sama seperti let, variabel const hanya bisa diakses dalam blok tempat ia dideklarasikan. Contoh: { const z = 30; console.log(z); // Bisa diakses } console.log(z); // Error </p>
+    <h6>4. Objek dan Array</h6>
+    <p>Meskipun nilai primitif tidak bisa diubah, properti objek atau elemen array yang dideklarasikan dengan const masih bisa dimodifikasi. Contoh: const person = { name: "John" }; person.name = "Doe"; // Tidak masalah const numbers = [1, 2, 3]; numbers.push(4); // Tidak masalah </p>
+    <h3>9.3 Kapan Menggunakan const?</h3>
+    <p>Gunakan const jika nilai variabel tidak akan berubah sepanjang kode. Untuk nilai yang bisa berubah, gunakan let.</p>
+    <h3>10.1 Operator</h3>
+    <p>Operator dalam JavaScript yaitu simbol atau kata kunci yang digunakan untuk melakukan operasi pada nilai atau variabel.</p>
+    <h3>10.2 Jenis-Jenis Operator </h3>
+    <h6>1. Operator Aritmatika</h6>
+    <p>Digunakan untuk perhitungan matematika. Contoh: +, -, *, /, % (modulus), ** (pangkat).</p>
+    <h6>2. Operator Penugasan</h6>
+    <p>Digunakan untuk memberikan nilai ke variabel. Contoh: =, +=, -=, *=, /=, %=.</p>
+    <h6>3. Operator Perbandingan</h6>
+    <p>Membandingkan dua nilai dan menghasilkan boolean (true atau false). Contoh: ==, ===, !=, !==, >, <, >=, <=. </p>
+    <h6>4. Operator Logika</h6>
+    <p>Digunakan untuk operasi logika. Contoh: && (AND), || (OR), ! (NOT). </p>
+    <h6>5. Operator String</h6>
+    <p>Digunakan untuk menggabungkan string. Contoh: +.</p>
+    <h6>6. Operator Tipe</h6>
+    <p>Digunakan untuk memeriksa atau mengubah tipe data. Contoh: typeof, instanceof.</p>
+    
   </div>
 
   </div>
