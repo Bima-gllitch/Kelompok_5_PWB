@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kelompok 5</title>
 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <style>
   
@@ -32,6 +33,16 @@
       padding: 20px;
       display: block;
     }
+    h2 {
+  color: #4caf50;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
   </style>
 </head>
 <body>
@@ -62,7 +73,75 @@
   </div>
     </div>
  </div>
+
+ <div class="container mt-5 p-4 border rounded bg-light">
     
+ <main>
+  <h1>Rangkuman 2</h1>
+  
+      <h2>Objek</h2>
+      <p>Objek adalah kumpulan dari properti dan metode. Properti adalah nilai yang dimiliki objek, sedangkan metode adalah fungsi yang dapat dijalankan oleh objek.</p>
+      <h3>Contoh:</h3>
+      <pre><code>const mobil = {
+merek: "Toyota",
+tahun: 2020,
+info: function() {
+  return `${this.merek} ${this.tahun}`;
+}
+};</code></pre>
+      <p>Untuk menampilkan informasi objek:</p>
+      <pre><code>console.log(mobil.info()); // Toyota 2020</code></pre>
+  
+      <h2>Event</h2>
+      <p>Event adalah aksi yang terjadi di dalam browser, seperti klik, hover, dan input. Kita bisa menangani event dengan menggunakan <code>addEventListener</code>.</p>
+      <h3>Contoh:</h3>
+      <pre><code>document.getElementById("tombol").addEventListener("click", function() {
+alert("Tombol diklik!");
+});</code></pre>
+  
+      <h2>String</h2>
+      <p>String adalah tipe data yang digunakan untuk menyimpan teks. Kita dapat melakukan berbagai operasi pada string.</p>
+      <h3>Contoh Metode String:</h3>
+      <ul>
+          <li><code>str.length</code> - Menghitung panjang string.</li>
+          <li><code>str.toUpperCase()</code> - Mengubah string menjadi huruf kapital.</li>
+          <li><code>str.slice()</code> - Mengambil bagian dari string.</li>
+      </ul>
+      <h3>Contoh:</h3>
+      <pre><code>const kalimat = "Belajar JavaScript";
+console.log(kalimat.length); // 17
+console.log(kalimat.toUpperCase()); // BELAJAR JAVASCRIPT
+console.log(kalimat.slice(0, 7)); // Belajar</code></pre>
+
+      <h2>Number</h2>
+      <p>Number adalah tipe data yang digunakan untuk menyimpan angka. JavaScript juga mendukung BigInt untuk angka yang sangat besar.</p>
+      <h3>Contoh:</h3>
+      <pre><code>const angka = 42;
+const besar = 1234567890123456789012345678901234567890n;</code></pre>
+      <h3>Metode Number:</h3>
+      <ul>
+          <li><code>Number.isInteger()</code> - Memeriksa apakah nilai adalah integer.</li>
+          <li><code>Number.parseFloat()</code> - Mengonversi string menjadi float.</li>
+      </ul>
+      <h3>Contoh:</h3>
+      <pre><code>console.log(Number.isInteger(angka)); // true
+console.log(Number.parseFloat("3.14")); // 3.14</code></pre>
+ 
+      <h2>Array</h2>
+      <p>Array adalah tipe data yang digunakan untuk menyimpan kumpulan nilai. Kita dapat mengakses elemen array menggunakan indeks.</p>
+      <h3>Contoh:</h3>
+      <pre><code>const buah = ["apel", "jeruk", "mangga"];
+console.log(buah[0]); // apel</code></pre>
+      <h3>Metode Array:</h3>
+      <ul>
+          <li><code>array.push()</code> - Menambahkan elemen ke akhir array.</li>
+          <li><code>array.pop()</code> - Menghapus elemen terakhir dari array.</li>
+          <li><code>array.map()</code> - Membuat array baru dengan hasil pemanggilan fungsi pada setiap elemen.</li>
+      </ul>
+      <h3>Contoh:</h3>
+      <pre><code>buah.push("pisang"); // ["apel", "jeruk", "mangga", "pisang"]
+console.log(buah);</code></pre>
+</main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
