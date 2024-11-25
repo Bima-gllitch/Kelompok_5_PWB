@@ -62,11 +62,16 @@
     </div>
  </div>
 
+ <div class="container mt-4 bg-Secondary" >
+  <div class="bg-light p-4 rounded shadow text-center">
+      <h1 class="mb-0">Rangkuman 1</h1>
+  </div>
+</div>
+
  <div class="container mt-5 p-4 border rounded bg-light">
     
     <!-- Rangkuman 1 -->
   <div id="Rangkuman1-content" class="profile-content">
-    <h2>Rangkuman 1</h2>
     <h3>1.1 Apa itu JavaScript(JS)?</h3>
     <p>JavaScript adalah bahasa pemrograman yang digunakan untuk membuat halaman web interaktif. JavaScript memungkinkan Anda untuk menambah fitur dinamis seperti animasi, form interaktif, dan banyak lagi pada halaman web.</p>
     <h3>1.2 Fitur utama JS</h3>
@@ -183,7 +188,111 @@
     <p>Digunakan untuk menggabungkan string. Contoh: +.</p>
     <h6>6. Operator Tipe</h6>
     <p>Digunakan untuk memeriksa atau mengubah tipe data. Contoh: typeof, instanceof.</p>
-    
+    <h6>Operator Lainnya</h6>
+    <p>- <strong>Ternary Operator (? :)</strong>: Untuk kondisi singkat. Contoh: let result = (5 > 3) ? "Yes" : "No"; // Hasil: "Yes" </p>
+    <p>- <strong>Spread Operator (...)</strong>: Untuk menyebar elemen array/objek.</p>
+    <h3>11.1 Operator Aritmatika</h3>
+    <p>Operator aritmatika dalam JavaScript digunakan untuk melakukan operasi matematika pada angka.</p>
+    <h3>11.2 Jenis Operator Aritmatika Utama</h3>
+    <h6>1. Penjumlahan(+)</h6>
+    <p>Di gunakan untuk menambah 2 angka. Contoh: let x = 5 + 3; // x = 8</p>
+    <h6>2. Pengurangan(-)</h6>
+    <p>Di gunakan untuk mengurangkan 2 angka. Contoh: let x = 5 - 3; // x = 2</p>
+    <h6>3. Perkalian(*)</h6>
+    <p>Di gunakan untuk mengalikan 2 angka. Contoh: let x = 5 * 3; // x = 15</p>
+    <h6>4. Pembagian(/)</h6>
+    <p>Di gunakan untuk membagi 2 angka. Contoh: let x = 5 / 2; // x = 2.5</p>
+    <h6>5. Modulus (%)</h6>
+    <p>Mengembalikan sisa pembagian. Contoh: let remainder = 7 % 2; // Hasil: 1 </p>
+    <h6>6. Pangkat (**)</h6>
+    <p>Menghitung pangkat. Contoh: let power = 2 ** 3; // Hasil: 8 </p>
+    <h5>Operator Aritmatika Tambahan</h5>
+    <p><strong>Inkrement (++):</strong> Menambah 1 ke nilai variabel.</p>
+    <p><strong>Dekrement (--):</strong> Mengurangi 1 dari nilai variabel.</p>
+    <h3>12.1 Operator Penugasan (Assignment) </h3>
+    <p>Operator penugasan dalam JavaScript digunakan untuk menetapkan nilai ke variabel.</p>
+    <h3>12.2 Jenis-Jenis Operator Penugasan</h3>
+    <h6>1. = </h6>
+    <p>Menetapkan nilai ke variabel. Contoh: let x = 10; // x menjadi 10 </p>
+    <h6>2. += </h6>
+    <p>Menambahkan nilai ke variabel dan menetapkan hasilnya. Contoh: let x = 10; x += 5; // x menjadi 15 </p>
+    <h6>3. -= </h6>
+    <p>Mengurangi nilai dari variabel dan menetapkan hasilnya. Contoh: let x = 10; x -= 3; // x menjadi 7 </p>
+    <h6>4. *= </h6>
+    <p>Mengalikan nilai variabel dengan angka lain dan menetapkan hasilnya. Contoh: let x = 5; x *= 2; // x menjadi 10 </p>
+    <h6>5. /= </h6>
+    <p>Membagi nilai variabel dengan angka lain dan menetapkan hasilnya. Contoh: let x = 10; x /= 2; // x menjadi 5 </p>
+    <h6>6. %= </h6>
+    <p>Menghitung sisa pembagian dan menetapkan hasilnya. Contoh: let x = 10; x %= 3; // x menjadi 1 </p>
+    <h6>7. **= </h6>
+    <p>Menghitung pangkat dan menetapkan hasilnya. Contoh: let x = 2; x **= 3; // x menjadi 8 </p>
+    <h3>12.3 Fungsi Operator Penugasan</h3>
+    <p>Operator penugasan mempermudah manipulasi nilai variabel dalam kode.</p>
+    <h3>13.1 Tipe Data (Datatypes) </h3>
+    <p>Tipe data dalam JavaScript digunakan untuk menyimpan berbagai jenis nilai.</p>
+    <h3>13.2 Jenis-Jenis Tipe Data Utama</h3>
+    <h6>1. String</h6>
+    <p>Teks yang dikelilingi tanda kutip ("" atau ''). Contoh: let text = "Hello"; </p>
+    <h6>2. Number</h6>
+    <p>Angka (baik bilangan bulat maupun desimal). Contoh: let x = 42; let y = 3.14; </p>
+    <h6>3. Boolean</h6>
+    <p>Hanya memiliki dua nilai: true atau false. Contoh: let isJavaScriptFun = true; </p>
+    <h6>4. Object</h6>
+    <p>Struktur data kompleks yang menyimpan pasangan kunci-nilai. Contoh :let isJavaScriptFun = true; </p>
+    <h6>5. Array</h6>
+    <p>Tipe data khusus yang menyimpan daftar nilai. Contoh: let colors = ["red", "blue", "green"]; </p>
+    <h6>6. Undefined</h6>
+    <p>Variabel yang dideklarasikan tetapi belum memiliki nilai. let x; // undefined </p>
+    <h6>7. Null</h6>
+    <p>Tipe data dengan nilai kosong. let y = null; </p>
+    <h5>*Notes: JavaScript adalah dinamis, artinya tipe data variabel dapat berubah saat runtime. Tipe data sangat penting untuk menentukan bagaimana data digunakan dalam kode.</h5>
+    <h3>14.1 Fungsi (Functions) </h3>
+    <p>Fungsi dalam JavaScript yaitu blok kode yang dirancang untuk menjalankan tugas tertentu. Fungsi membantu mengorganisasi dan mengulang kode dengan mudah.</p>
+    <h5>Cara Membuat Fungsi</h5>
+    <p>Gunakan kata kunci function, diikuti oleh nama fungsi, tanda kurung, dan blok kode.</p>
+    <p>function myFunction() { console.log("Hello, World!"); } </p>
+    <h5>Memanggil Fungsi</h5>
+    <p>Fungsi dijalankan dengan menulis nama fungsinya diikuti tanda kurung.</p>
+    <p>myFunction(); // Output: Hello, World! </p>
+    <h5>Parameter dan Argumen</h5>
+    <p><strong>Parameter:</strong> Variabel yang dideklarasikan di dalam tanda kurung saat fungsi dibuat.</p>
+    <p><strong>Argumen:</strong> Nilai yang diberikan saat fungsi dipanggil.</p>
+    <p>   <img src="12.png" /> </p>
+    <h5>Nilai Balikan (Return Value)</h5>
+    <p>Gunakan return untuk mengembalikan hasil dari fungsi.</p>
+    <p> <img src="13.png" /> </p>
+    <h5>Fungsi Anonim (Anonymous Function)</h5>
+    <p>Fungsi tanpa nama, biasanya digunakan dalam ekspresi atau callback. </p>
+    <p> <img src="14.png" /> </p>
+    <h5>Fungsi Panah (Arrow Function)</h5>
+    <p>Cara singkat untuk menulis fungsi.</p>
+    <p> <img src="15.png" /> </p>
+    <h5>*Notes: Fungsi membantu membuat kode lebih modular, mudah dibaca, dan dapat digunakan ulang. Selalu beri nama fungsi yang deskriptif untuk meningkatkan keterbacaan kode. </h5>
+    <h3>15.1 Objek (Objects) </h3>
+    <p>Objek dalam JavaScript digunakan untuk menyimpan koleksi data dan properti (kunci-nilai).</p>
+    <h3>15.2 Cara Membuat Objek</h3>
+    <p>Objek dibuat dengan menggunakan tanda kurung kurawal {}. Properti ditulis dalam pasangan kunci: nilai, dipisahkan dengan koma.</p>
+    <p> <img src="16.png" /> </p>
+    <h3>15.3 Mengakses Properti Objek</h3>
+    <h6>1. Dot Notation (titik)</h6>
+    <p>console.log(person.firstName); // Output: John </p>
+    <h6>2. Bracket Notation (kurung siku)</h6>
+    <p>console.log(person["lastName"]); // Output: Doe </p>
+    <h3>15.4 Menambahkan atau Mengubah Properti</h3>
+    <h6>1. Menambahkan properti baru</h6>
+    <p>person.country = "USA"; </p>
+    <h6>2. Mengubah properti</h6>
+    <p>person.age = 31; </p>
+    <h3>15.5 Menghapus Properti</h3>
+    <h6>Gunakan kata kunci delete.</h6>
+    <p>delete person.job; </p>
+    <h3>15.6 Method dalam Objek</h3>
+    <p>Method adalah fungsi yang menjadi properti objek.</p>
+    <p> <img src="17.png" /> </p>
+    <h5>*Notes:</h5> <p>- Objek mempermudah pengelolaan data yang kompleks. </p>
+    <p>- Gunakan this dalam metode untuk merujuk ke properti objek saat ini.</p>
+    <p>- Objek sering digunakan sebagai dasar untuk pemrograman berbasis objek (OOP) dalam JavaScript.</p>
+
   </div>
 
   </div>
