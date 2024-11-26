@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .asd {
+            background-color: aliceblue;
+            padding-bottom: 2px;
+        }
+        .H1 {
+            text-decoration: underline;
+        }
+        .mrh {
+            color: red;
+            background-color: #f6f6f7;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .br {
+            color: blue;
+        }
+        .cklt{
+            color: rgb(202, 138, 53);
+        }
+        .hj {
+            color: rgb(24, 184, 24)
+        }
+        .text-center {
+            margin-bottom: 5%;
+        }
+    </style>
+</head>
+<body>
+   
+<div class="asd">
+    <div class="container-fluid">
+        <div class="d-flex justify-content-end py-3">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    JS Tutorial
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="Rangkuman3.html">JavaScript Array</a></li>
+                    <li><a class="dropdown-item" href="2.date.html">JavaScript Date</a></li>
+                    <li><a class="dropdown-item" href="3.math.html">JavaScript Math</a></li>
+                    <li><a class="dropdown-item" href="4.random.html">JavaScript Random</a></li>
+                    <li><a class="dropdown-item" href="5.booleans.html">JavaScript Booleans</a></li>
+                    <li><a class="dropdown-item" href="6.comparisons.html">JavaScript Comparisons</a></li>
+                    <li><a class="dropdown-item" href="7.ifelse.html">JavaScript If Else</a></li>
+                    <li><a class="dropdown-item" href="8.switch.html">JavaScript Switch</a></li>
+                    <li><a class="dropdown-item" href="9.loopfor.html">JavaScript Loop For</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="H1"><strong>JavaScript Date Objects</strong></h1>
+        <h3 class="text-dark">1. Default Date Output</h3>
+        <p><span class="me-2 fs-4">•</span><strong>Membuat objek tanggal:</strong> Objek tanggal dibuat menggunakan <span class="mrh">new Date()</span></p>
+    </div>
+
+    <div class="container mt-3">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h5>Contoh</h5>
+            </div>
+            <div class="card-body">
+                <pre class="bg-light p-3 rounded">
+<code>
+<span class="br">const</span> date = <span class="br">new</span> Date [<span class="cklt">"2022-03-25"</span>];
+</code>
+                </pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <p><span class="me-2 fs-4">•</span><strong>Parameter:</strong>Anda dapat memberikan parameter berupa string tanggal, angka (milidetik sejak 1 Januari 1970), atau format lainnya.</p>
+    </div>
+
+    <div class="p-4">
+        <hr class="border border-secondary opacity-60">
+    </div>
+
+    <!--dget-->
+    <div class="container">
+        <h1 class="H1"><strong>JavaScript Date Formats</strong></h1>
+        <p>JavaScript mendukung berbagai format string untuk membuat objek tanggal, seperti:</p>
+        <p><span class="me-2">•</span><strong>ISO Date (International Standard):</strong> Format <span class="mrh">"YYYY-MM-DD"</span> adalah format yang disarankan karena mendukung kompatibilitas penuh.</p>
+        <p><span class="me-2">•</span><strong>Short Date:</strong> Format pendek seperti<span class="mrh">"MM/DD/YYYY"</span> biasanya digunakan di Amerika Serikat.</p>
+        <p><span class="me-2">•</span><strong>Long Date:</strong> Format panjang seperti<span class="mrh">"MMM DD YYYY"</span>atau <span class="mrh">"25 Mar 2015"</span> menggunakan nama bulan secara lengkap atau singkat.</p>
+        <p>Pentingnya format tanggal adalah untuk memastikan bahwa data tanggal diproses secara konsisten di berbagai browser dan zona waktu. Tanggal ISO adalah pilihan terbaik karena lebih andal untuk parsing dan kompatibilitas.</p>
+    </div>
+
+    <div class="p-4">
+        <hr class="border border-secondary opacity-60">
+    </div>
+
+    <div class="container">
+        <h1 class="H1"><strong>JavaScript Get Methods</strong></h1>
+        <p>JavaScript menyediakan metode untuk membaca komponen tanggal, seperti:</p>
+        <p><span class="me-2">•</span><span class="mrh">getFullYear()</span>: Mendapatkan tahun.</p>
+        <p><span class="me-2">•</span><span class="mrh">getMonth()</span>: Mendapatkan bulan (0-11, Januari dimulai dari 0).</p>
+        <p><span class="me-2">•</span><span class="mrh">getDate()</span>: Mendapatkan tanggal dalam bulan (1-31)</p>
+        <p><span class="me-2">•</span><span class="mrh">getDay()</span>: Mendapatkan hari dalam minggu (0-6, Minggu adalah 0).</p>
+        <p>Metode lainnya juga mencakup waktu seperti:</p>
+        <p><span class="me-2">•</span><span class="mrh">getHours()</span>, <span class="mrh">getMinutes()</span>, <span class="mrh">getSeconds()</span> dan <span class="mrh">getMilliseconds()</span> untuk membaca komponen waktu.</p>
+        <p><span class="me-2">• Metode <strong>getUTC...()</strong> digunakan untuk mendapatkan nilai berdasarkan waktu UTC.</p>
+    </div>
+
+    <div class="p-4">
+        <hr class="border border-secondary opacity-60">
+    </div>
+
+    <div class="container">
+        <h1 class="H1"><strong>JavaScript Set Methods</strong></h1>
+        <p>Selain membaca tanggal, JavaScript mendukung metode untuk mengatur nilai tanggal:</p>
+        <p><span class="me-2">•</span><span class="mrh">setFullYear(year, month, day)</span>: Mengatur tahun, bulan, dan tanggal.</p>
+        <p><span class="me-2">•</span><span class="mrh">setMonth(month, day)</span>: Mengatur bulan (0-11) dan opsional tanggal.</p>
+        <p><span class="me-2">•</span><span class="mrh">setDate(day)</span>: Mengatur tanggal dalam bulan.</p>
+        <p>Anda juga dapat mengatur waktu dengan metode seperti <span class="mrh">getHours()</span>, <span class="mrh">getMinutes()</span>, <span class="mrh">getSeconds()</span> dan <span class="mrh">getMilliseconds()</span>. Semua metode ini memungkinkan manipulasi fleksibel atas nilai waktu dan tanggal dalam aplikasi Anda.</p>
+    </div>
+
+    <div class="p-4">
+        <hr class="border border-secondary opacity-60">
+    </div>
+
+    <div class="text-center">
+        Untuk detail lebih lanjut, Anda dapat mengunjungi 
+            <a  href="https://www.w3schools.com/js/js_dates.asp"  class="text-primary text-decoration-underline">JavaScript Tutorial Date</a>
+    </div>
+    
+</div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>

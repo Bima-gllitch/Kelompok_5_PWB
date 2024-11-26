@@ -1,13 +1,37 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kelompok 5</title>
-  <!-- Link ke CSS Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <style>
-    /* Styling tambahan untuk sidebar */
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelompok 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .asd {
+            background-color: aliceblue;
+            padding-bottom: 2px;
+        }
+        .H1 {
+            text-decoration: underline;
+        }
+        .highlight {
+            color: red;
+            background-color: #f6f6f7;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .abc {
+            color: blue;
+        }
+        .atb{
+            color: rgb(202, 138, 53);
+        }
+        .hj {
+            color: rgb(24, 184, 24)
+        }
+        .text-center {
+            margin-bottom: 5%;
+        }
+        /* Styling tambahan untuk sidebar */
     .sidebar {
       height: 100vh;
       position: fixed;
@@ -32,37 +56,431 @@
       padding: 20px;
       display: block;
     }
-  </style>
+    </style>
 </head>
 <body>
 
-      <!-- Header -->
-  <div class="card bg-warning">
-    <div class="card-body">
-      <h5 class="card-title">Kelompok 5</h5>
-    </div>
-  </div>
-
-    <!-- Sidebar -->
-  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Menu</button>
-
-  <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-    <div class="offcanvas-header">
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-  <div class="sidebar">
-    <h3 class="text-center">Menu</h3>
-    <a href="index.html" id="Home" onclick="showContent('Home')">Home</a>
-    <a href="Rangkuman1.html" id="Rangkuman1" onclick="showContent('Rangkuman1')">Rangkuman 1</a>
-    <a href="Rangkuman2.html" id="Rangkuman2" onclick="showContent('Rangkuman2')">Rangkuman 2</a>
-    <a href="Rangkuman3.html" id="Rangkuman3" onclick="showContent('Rangkuman3')">Rangkuman 3</a>
-    <a href="Rangkuman4.html" id="Rangkuman4" onclick="showContent('Rangkuman4')">Rangkuman 4</a>
-    <a href="Rangkuman5.html" id="Rangkuman5" onclick="showContent('Rangkuman5')">Rangkuman 5</a>
-  </div>
-    </div>
- </div>
+  <div class="asd">
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!-- Header -->
+<div class="card bg-warning">
+  <div class="card-body">
+    <h5 class="card-title">Kelompok 5</h5>
+  </div>
+</div>
+
+  <!-- Sidebar -->
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Menu</button>
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+<div class="sidebar">
+  <h3 class="text-center">Menu</h3>
+  <a href="index.html" id="Home" onclick="showContent('Home')">Home</a>
+  <a href="Rangkuman1.html" id="Rangkuman1" onclick="showContent('Rangkuman1')">Rangkuman 1</a>
+  <a href="Rangkuman2.html" id="Rangkuman2" onclick="showContent('Rangkuman2')">Rangkuman 2</a>
+  <a href="Rangkuman3.html" id="Rangkuman3" onclick="showContent('Rangkuman3')">Rangkuman 3</a>
+  <a href="Rangkuman4.html" id="Rangkuman4" onclick="showContent('Rangkuman4')">Rangkuman 4</a>
+  <a href="Rangkuman5.html" id="Rangkuman5" onclick="showContent('Rangkuman5')">Rangkuman 5</a>
+</div>
+  </div>
+</div>
+    
+    <div class="container-fluid">
+        <div class="d-flex justify-content-end py-3">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    JS Tutorial
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="Rangkuman3.html">JavaScript Array</a></li>
+                    <li><a class="dropdown-item" href="2.date.html">JavaScript Date</a></li>
+                    <li><a class="dropdown-item" href="3.math.html">JavaScript Math</a></li>
+                    <li><a class="dropdown-item" href="4.random.html">JavaScript Random</a></li>
+                    <li><a class="dropdown-item" href="5.booleans.html">JavaScript Booleans</a></li>
+                    <li><a class="dropdown-item" href="6.comparisons.html">JavaScript Comparisons</a></li>
+                    <li><a class="dropdown-item" href="7.ifelse.html">JavaScript If Else</a></li>
+                    <li><a class="dropdown-item" href="8.switch.html">JavaScript Switch</a></li>
+                    <li><a class="dropdown-item" href="9.loopfor.html">JavaScript Loop For</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Array Search -->
+    <div class="container">
+        <h1 class="H1"><strong>JavaScript Array Search</strong></h1>
+        <h3 class="text-dark">1. Array JavaScript indexOf()</h3>
+        <p class="text-dark">
+            Metode ini <span class="highlight">indexOf()</span> mencari nilai elemen pada suatu array dan mengembalikan posisinya.
+        </p>
+    </div>
+       
+    <div class="container mt-3">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h5>Contoh</h5>
+            </div>
+            <div class="card-body">
+                <p>Cari array untuk item <strong>"Apple"</strong>:</p>
+                <pre class="bg-light p-3 rounded">
+<code>
+<span class="abc">const</span> fruits = [<span class="atb">"Apple", "Orange", "Apple", "Mango"</span>];
+<span class="abc">let</span> position = fruits.indexOf(<span class="atb">"Apple"</span>) + <span class="highlight">1</span>;
+</code>
+                </pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <p class="text-dark"><span class="highlight">Array.indexOf()</span> mengembalikan -1 jika item tidak ditemukan.</p>
+        <p class="text-dark">Jika item muncul lebih dari satu kali, maka posisi kemunculan pertama akan dikembalikan.</p>
+    </div>
+
+<div class="container mt-5">
+    <h3 class="text-dark">2. JavaScript Array lastIndexOf()</h3>
+    <p class="text-dark">
+    <span class="highlight">Array.lastIndexOf()</span> sama dengan <span class="highlight"> Array.indexOf()</span>, tetapi mengembalikan posisi kemunculan terakhir elemen yang ditentukan.
+    </p>
+</div>
+
+<div class="container mt-3">
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h5>Contoh</h5>
+        </div>
+        <div class="card-body">
+            <p>Cari array untuk item <strong>"Apple"</strong>:</p>
+            <pre class="bg-light p-3 rounded">
+<code>
+<span class="abc">const</span> fruits = [<span class="atb">"Apple", "Orange", "Apple", "Mango"</span>];
+<span class="abc">let</span> position = fruits.lastIndexOf(<span class="atb">"Apple"</span>) + <span class="highlight">1</span>;
+</code>
+            </pre>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <h3 class="text-dark">3. JavaScript Array includes()</h3>
+    <p class="text-dark">
+    ECMAScript 2016 diperkenalkan<span class="highlight">Array.includes()</span> ke array. Hal ini memungkinkan kita untuk memeriksa apakah suatu elemen ada dalam array (termasuk NaN, tidak seperti indexOf).
+    </p>
+</div>
+
+<div class="container mt-3">
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h5>Contoh</h5>
+        </div>
+        <div class="card-body">
+            <pre class="bg-light p-3 rounded">
+<code>
+<span class="abc">const</span> fruits = [<span class="atb">"Banana", "Orange", "Apple", "Mango"</span>];
+fruits.includes(<span class="atb">"Mango"</span>); <span class="hj">// is true</span>
+</code>
+            </pre>
+        </div>
+    </div>
+</div>
+
+    <div class="p-4">
+        <hr class="border border-secondary opacity-60">
+    </div>
+    
+    <!-- JavaScript Array Sort-->
+    <div class="container">
+        <h1 class="H1"><strong>JavaScript Array Sort</strong></h1>
+        <h2>Alphabetic Sort</h2>
+        <h3 class="text-dark">1. Array sort()</h3>
+        <p class="text-dark">
+            Metode ini<span class="highlight">sort()</span> mengurutkan array berdasarkan abjad.
+        </p>
+    </div>
+
+    <div class="container">
+        <h3 class="text-dark">2. Array reverse()</h3> 
+        <p class="text-dark">Metode ini<span class="highlight">reverse()</span> membalikkan elemen dalam array.</p>
+        <p>Dengan menggabungkan <span class="highlight">sort()</span>dan<span class="highlight">reverse()</span>, Anda dapat mengurutkan array dalam urutan menurun:</p>
+    </div>
+    
+    <div class="container mt-3">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h5>Contoh</h5>
+            </div>
+            <div class="card-body">
+                <pre class="bg-light p-3 rounded">
+    <code>
+    <span class="abc">const</span> fruits = [<span class="atb">"Banana", "Orange", "Apple", "Mango"</span>];
+    fruits.sort();
+    fruits.reverse();
+    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h2>Numeric Sort</h2>
+        <p class="text-dark">
+        Secara default,<span class="highlight">sort()</span>fungsi mengurutkan nilai sebagai <strong>string</strong>.
+        </p>
+        <p>Ini berfungsi baik untuk string ("Apple" muncul sebelum "Banana").</p>
+        <p>Jika angka diurutkan sebagai string, "25" lebih besar dari "100", karena "2" lebih besar dari "1".</p>
+        <p>Oleh karena itu,<span class="highlight">sort()</span> metode ini akan menghasilkan hasil yang salah saat mengurutkan angka.</p>
+        <p>Anda dapat memperbaikinya dengan menyediakan <strong>fungsi pembanding</strong>:</p>
+    </div>
+
+    <div class="container mt-3">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h5>Contoh</h5>
+            </div>
+            <div class="card-body">
+                <p>Mengurutkan array secara menaik:</p>
+                <pre class="bg-light p-1 rounded">
+    <code>
+    <span class="abc">const</span> points = [<span class="atb">"40, 100, 1, 5, 25, 10"</span>];
+    points.sort(<span class="abc">function</span>(a, b){<span class="abc">return</span> a - b})
+    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-3">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h5>Contoh</h5>
+            </div>
+            <div class="card-body">
+                <p>Mengurutkan array secara menurun:</p>
+                <pre class="bg-light p-1 rounded">
+    <code>
+    <span class="abc">const</span> points = [<span class="atb">"40, 100, 1, 5, 25, 10"</span>];
+    points.sort(<span class="abc">function</span>(a, b){<span class="abc">return</span> b - a})
+    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-4">
+        <hr class="border border-secondary opacity-60">
+    </div>
+
+    <!-- JavaScript Array Iteration -->
+    <div class="container">
+        <h1 class="H1"><strong>JavaScript Array Iteration</strong></h1>
+        <h3 class="text-dark">1. Array forEach()</h3>
+        <p class="text-dark">
+        Metode ini <span class="highlight">forEach()</span> memanggil suatu fungsi (fungsi panggilan balik) satu kali untuk setiap elemen array.</p>
+    </div>
+
+    <div class="container mt-3">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h5>Contoh</h5>
+            </div>
+            <div class="card-body">
+                <pre class="bg-light p-3 rounded">
+    <code>
+    <span class="abc">const</span> numbers = [<span class="highlight">45, 4, 9, 16, 25</span>];
+    <span class="abc">let</span> txt = <span class="abc"> ""</span>;
+    numbers.forEach(myFunction);
+
+    <span class="abc">function</span> myFunction(value, index, array) {
+        txt += value + <span class="atb">"< br >"</span>;
+    }
+    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <h3 class="text-dark">2. Array map()</h3>
+        <p class="text-dark">Contoh ini mengalikan setiap nilai array dengan 2:</p>
+    </div>
+
+    <div class="container mt-3">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h5>Contoh</h5>
+            </div>
+            <div class="card-body">
+                <pre class="bg-light p-3 rounded">
+    <code>
+    <span class="abc">const</span> numbers1 = [<span class="highlight">45, 4, 9, 16, 25</span>];
+    <span class="abc">const</span> numbers2 = numbers1.map(myFunction);
+
+    <span class="abc">function</span> myFunction(value, index, array) {
+        <span class="abc">return</span> value * <span class="highlight">2</span>;
+    }
+    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <h3 class="text-dark">3. Array filter()</h3>
+        <p class="text-dark">Metode ini <span class="highlight">filter()</span>membuat array baru dengan elemen-elemen array yang lulus pengujian.</p>
+        <p>Contoh ini membuat array baru dari elemen dengan nilai lebih besar dari 18:</p>
+    </div>
+
+    <div class="container mt-3">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h5>Contoh</h5>
+            </div>
+            <div class="card-body">
+                <pre class="bg-light p-3 rounded">
+    <code>
+    <span class="abc">const</span> numbers1 = [<span class="highlight">45, 4, 9, 16, 25</span>];
+    <span class="abc">const</span> over18 = numbers.filter(myFunction);
+
+    <span class="abc">function</span> myFunction(value, index, array) {
+        <span class="abc">return</span> value > <span class="highlight">18</span>;
+    }
+    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <h3 class="text-dark">4. Array reduce()</h3>
+        <p class="text-dark">Metode ini <span class="highlight">reduce()</span>menjalankan fungsi pada setiap elemen array untuk menghasilkan (menguranginya menjadi) satu nilai.</p>
+        <p>Contoh ini menemukan jumlah semua angka dalam sebuah array:</p>
+    </div>
+
+    <div class="container mt-3">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h5>Contoh</h5>
+            </div>
+            <div class="card-body">
+                <pre class="bg-light p-3 rounded">
+    <code>
+    <span class="abc">const</span> numbers1 = [<span class="highlight">45, 4, 9, 16, 25</span>];
+    <span class="abc">let</span> sum = numbers.reduce(myFunction);
+
+    <span class="abc">function</span> myFunction(value, index, array) {
+        <span class="abc">return</span> total + value
+    }
+    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <h3 class="text-dark">5. Array every()</h3>
+        <p class="text-dark">Metode ini <span class="highlight">every()</span>memeriksa apakah semua nilai array lulus uji.</p>
+        <p>Contoh ini memeriksa apakah semua nilai array lebih besar dari 18:</p>
+    </div>
+
+    <div class="container mt-3">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h5>Contoh</h5>
+            </div>
+            <div class="card-body">
+                <pre class="bg-light p-3 rounded">
+    <code>
+    <span class="abc">const</span> numbers = [<span class="highlight">45, 4, 9, 16, 25</span>];
+    <span class="abc">let</span> allOver18 = numbers.every(myFunction);
+
+    <span class="abc">function</span> myFunction(value, index, array) {
+        <span class="abc">return</span> value > <span class="highlight">18</span>;
+    }
+    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <h3 class="text-dark">6. Array entries()</h3>
+        <p class="text-dark">Metode ini <span class="highlight">entries()</span>mengembalikan objek Array Iterator dengan pasangan kunci/nilai:</p>
+        <p>[0, "Banana"]</p>
+        <p>[1, "Orange"]</p>
+        <p>[2, "Apple"]</p>
+        <p>[3, "Mango"]</p>
+        <p>Metode ini <span class="highlight">entries()</span>tidak mengubah array asli.</p>
+    </div>
+
+    <div class="container mt-3">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h5>Contoh</h5>
+            </div>
+            <div class="card-body">
+                <p>Buat Array Iterator, lalu ulangi pasangan kunci/nilai:</p>
+                <pre class="bg-light p-3 rounded">
+    <code>
+    <span class="abc">const</span> fruits = [<span class="atb">"Banana", "Orange", "Apple", "Mango"</span>];
+    <span class="abc">const</span> f = fruits.entries();
+
+    <span class="abc">for</span> (<span class="abc">let</span> x of f) {
+        document.getElementById(<span class="atb">"demo"</span>).innerHTML += x;
+    }
+    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-4">
+        <hr class="border border-secondary opacity-60">
+    </div>
+
+    <!--JavaScript Array Const-->
+    <div class="container mt-3">
+        <h1 class="H1"><strong>JavaScript Array Const</strong></h1>
+        <h3>Const Block Scope</h3>
+        <p class="text-dark">Suatu array yang dideklarasikan dengan<span class="highlight">const</span>memiliki <strog>Cakupan Blok</strog>.</p>
+        <p>Suatu array yang dideklarasikan dalam suatu blok tidak sama dengan array yang dideklarasikan di luar blok:</p>
+    </div>
+
+    <div class="container mt-3">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h5>Contoh</h5>
+            </div>
+            <div class="card-body">
+                <pre class="bg-light p-3 rounded">
+    <code>
+    <span class="abc">const</span> cars = [<span class="atb">"Saab", "Volvo", "BMW"</span>];
+    <span class="hj">// Here cars[0] is "Saab"</span>
+    {
+        <span class="abc">const</span> cars = [<span class="atb">Toyota"", "Volvo", "BMW"</span>];
+    <span class="hj">// Here cars[0] is "Toyota"</span>
+    }
+    <span class="hj">// Here cars[0] is "Saab"</span>
+    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-4">
+        <hr class="border border-secondary opacity-60">
+    </div>
+
+    <div class="text-center mt-2">
+        Untuk detail lebih lanjut, Anda dapat mengunjungi 
+            <a  href="https://www.w3schools.com/js/js_arrays.asp"  class="text-primary text-decoration-underline">JavaScript Tutorial Array</a>
+    </div>
+
+</div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
 </body>
 </html>

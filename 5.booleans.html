@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .asd {
+            background-color: aliceblue;
+            padding-bottom: 2px;
+        }
+        .H1 {
+            text-decoration: underline;
+        }
+        .mrh {
+            color: red;
+            background-color: #f6f6f7;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .br {
+            color: blue;
+        }
+        .cklt{
+            color: rgb(202, 138, 53);
+        }
+        .hj {
+            color: rgb(24, 184, 24)
+        }
+        .ab {
+            color: rgb(180, 186, 191);
+        }
+        .ung {
+            color: blueviolet;
+        }
+        .text-center {
+            margin-bottom: 5%;
+        }
+    </style>
+</head>
+<body>
+<div class="asd">
+
+    <div class="container-fluid">
+        <div class="d-flex justify-content-end py-3">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    JS Tutorial
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="Rangkuman3.html">JavaScript Array</a></li>
+                    <li><a class="dropdown-item" href="2.date.html">JavaScript Date</a></li>
+                    <li><a class="dropdown-item" href="3.math.html">JavaScript Math</a></li>
+                    <li><a class="dropdown-item" href="4.random.html">JavaScript Random</a></li>
+                    <li><a class="dropdown-item" href="5.booleans.html">JavaScript Booleans</a></li>
+                    <li><a class="dropdown-item" href="6.comparisons.html">JavaScript Comparisons</a></li>
+                    <li><a class="dropdown-item" href="7.ifelse.html">JavaScript If Else</a></li>
+                    <li><a class="dropdown-item" href="8.switch.html">JavaScript Switch</a></li>
+                    <li><a class="dropdown-item" href="9.loopfor.html">JavaScript Loop For</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="H1"><strong>JavaScript Booleans</strong></h1>
+        <p>Boolean adalah tipe data di JavaScript yang hanya memiliki dua nilai: <i>true</i> dan <i>false</i>. Boolean sering digunakan untuk mengontrol alur program dengan keputusan logis.</p>
+
+        <h3 class="mt-3">1. Boolean Sebagai Hasil Operasi Logis</h3>
+        <p>Boolean dapat dihasilkan dari:</p>
+        <li>Perbandingan (misalnya <span class="cklt">10 > 9</span> menghasilkan <span class="br">true</span>)</li>
+        <li>Logika (operator seperti <span class="mrh">&&</span>, <span class="mrh">||</span>, dan <span class="mrh">!</span>).</li>
+
+        <h3 class="mt-3">2. Tipe Data Boolean</h3>
+        <p>Boolean di JavaScript merupakan tipe data primitif. Boolean digunakan untuk mengevaluasi ekspresi logis dan dapat digunakan untuk pengujian kondisi dalam pernyataan <span class="mrh">if</span> atau <span class="mrh">while</span>.</p>
+
+        <h3 class="mt-3">3. Konversi Ke Boolean</h3>
+        <p>JavaScript secara otomatis mengonversi beberapa nilai menjadi boolean:</p>
+        <li>Nilai falsy (seperti <span class="mrh">0</span>, <span class="mrh">""</span>, <span class="mrh">null</span>, <span class="mrh">undefined</span> dan <span class="mrh">NaN</span>) menjadi <span class="br">false</span></li>
+        <li>Nilai truthy (seperti angka non-0, string non-kosong, atau objek) menjadi <span class="br">true</span>.</li>
+
+        <h3 class="mt-3">4. Boolean Dalam Kondisi</h3>
+        <p>Nilai boolean sangat penting dalam struktur kendali seperti <span class="mrh">if</span>, <span class="mrh">while</span>,  dan ternary operator.</p>
+    </div>
+
+    <div class="container mt-3">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h5>Contoh</h5>
+            </div>
+            <div class="card-body">
+                <pre class="bg-light p-3 rounded">
+<code>
+<span class="ung">if</span> (<span class="br">true</span>) {
+<span class="cklt">console</span>.<span class="br">log</span>(<span class="hj">"This is true"</span>); 
+</code>
+                </pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-4">
+        <hr class="border border-secondary opacity-60">
+    </div>
+
+    <div class="text-center">
+        Untuk detail lebih lanjut, Anda dapat mengunjungi 
+            <a  href="https://www.w3schools.com/js/js_booleans.asp"  class="text-primary text-decoration-underline">JavaScript Tutorial Booleans</a>
+    </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
